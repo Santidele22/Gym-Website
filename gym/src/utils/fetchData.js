@@ -1,3 +1,4 @@
+
 export const fetchData = async (url,options) => {
 	try {
 		const response = await fetch(url, options);

@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom"
 //Components
 import Navbar from "./components/Navbar"
 //Pages
-import ExercizeDetail from "./pages/Exercize-Detail"
+import ExercizeDetail from "./pages/ExerciseDetail"
 import Home from "./pages/Home"
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/exercize:id" element={<ExercizeDetail/>}/>
+      <Route path="/exercise/:id" element={<ExercizeDetail/>}/>
     </Routes>
  </Box>
     </>
